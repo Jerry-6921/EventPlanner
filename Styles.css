@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.event-form, .calendar, .event-list {
+    margin-bottom: 20px;
+}
+
+.event-form input, .event-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.event-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-form button:hover {
+    background-color: #0056b3;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar div {
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.calendar .event {
+    background-color: #ffc107;
+}
+
+.event-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-list li {
+    background-color: #007bff;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.event-list li button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.event-list li button:hover {
+    background-color: #c82333;
+}
